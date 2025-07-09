@@ -36,6 +36,32 @@
             <Neutroamine>2</Neutroamine>
             <InsectJelly>5</InsectJelly>
         </costList>
+        
+        <!--All the values we need for an ingestible drug--> 
+        <!--What happens when we take the drug-->
+        <ingestible> 
+            <foodType>Processed</foodType><!--VegetableOrFruit Fluid are other food types -->
+            <joyKind>Chemical</joyKind> 
+            <joy>0.30</joy> <!--Max value is -->
+            <drugCategory>Hard</drugCategory> 
+            <baseIngestTicks>150</baseIngestTicks> 
+            <chairSearchRadius>4</chairSearchRadius> 
+            <!--Can someone feed you this drug--> 
+            <nurseable>true</nurseable> 
+            <!--Put outcomedoers here later--> 
+        </ingestible> 
+
+        <!--This comp is needed for the "drug policy" menu--> 
+        <!--It also defines a bunch of important properties about the drug-->
+        <comps> 
+            <li Class="CompProperties_Drug"> 
+                <chemical>Ambrosia</chemical> 
+                <addictiveness>0.030</addictiveness> 
+                <minToleranceToAddict>0.15</minToleranceToAddict> 
+                <listOrder>40</listOrder> 
+            </li> 
+        </comps> 
+
 
     <ThingDef/>
 </Defs>
